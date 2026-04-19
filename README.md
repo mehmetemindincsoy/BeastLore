@@ -59,7 +59,7 @@ beastlore/
 
 1. Projeyi bilgisayarınıza indirin
 2. XAMPP, WAMP veya benzeri bir yerel sunucu kurun
-3. Proje klasörünü `htdocs` (XAMPP), `www` (WAMP) içine taşıyın
+3. Proje klasörünü `htdocs` (XAMPP) / `www` (WAMP) içine taşıyın
 4. Tarayıcıdan `http://localhost/beastlore/` adresine gidin
 
 ---
