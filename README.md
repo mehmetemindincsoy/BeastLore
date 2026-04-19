@@ -4,13 +4,13 @@ BeastLore, dünyanın farklı kültürlerine ait mitolojik varlıkları bir aray
 
 ---
 
-## 📌 Proje Hakkında
+## Proje Hakkında
 
 Bu projede amacımız; PHP, HTML ve CSS kullanarak dinamik, çok sayfalı ve gerçek bir kullanıcı deneyimi sunan bir web sitesi geliştirmek.
 
 ---
 
-## 🗂️ Sayfa Yapısı
+## Sayfa Yapısı
 
 | Sayfa | Açıklama |
 |---|---|
@@ -22,7 +22,7 @@ Bu projede amacımız; PHP, HTML ve CSS kullanarak dinamik, çok sayfalı ve ger
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 | Teknoloji | Kullanım Amacı |
 |---|---|
@@ -34,7 +34,7 @@ Bu projede amacımız; PHP, HTML ve CSS kullanarak dinamik, çok sayfalı ve ger
 
 ---
 
-## 📁 Dosya Yapısı
+## Dosya Yapısı
 
 ```
 beastlore/
@@ -55,7 +55,7 @@ beastlore/
 
 ---
 
-## 🚀 Kurulum
+## Kurulum
 
 1. Projeyi bilgisayarınıza indirin
 2. XAMPP, WAMP veya benzeri bir yerel sunucu kurun
@@ -64,7 +64,7 @@ beastlore/
 
 ---
 
-## 👤 Geliştiriciler
+## Geliştiriciler
 
 | İsim | Öğrenci No |
 |---|---|
