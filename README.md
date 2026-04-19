@@ -158,4 +158,3 @@ beastlore/
 
 ---
 
-*BeastLore — Efsaneler ölmez, sadece arşivlenir.* 🐲
