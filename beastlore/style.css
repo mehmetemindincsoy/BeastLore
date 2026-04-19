@@ -1,0 +1,314 @@
+:root {
+    --gold: #c5a059;
+    --dark-bg: #0d0d0d;
+    --card-bg: #1a1a1a;
+    --text-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Ana özellikler*/
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    animation: shadow 4.5s forwards;
+}
+
+@keyframes shadow {
+    100% {box-shadow: 10px 20px 250px rgba(255, 198, 93, 0.8);}
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    user-select: none;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    user-select: none;
+}
+
+.logo img{
+    max-width: 170px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/*Giriş Yazısı ve Resimler*/
+.mid-container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--gold);
+}
+
+.mid-ustyazi {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 0.7rem;
+}
+
+.mid-yazi {
+    position: absolute; 
+    z-index: 10;
+    background: transparent;
+    text-align: center;
+    user-select: none;
+    font-family: 'Cinzel', serif;
+}
+
+.mid-animasyon {
+    margin: 100px auto;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.mid-animasyon::-webkit-scrollbar {
+    display: none;
+}
+
+.mid-animasyon-grup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
+    animation: spin 30s infinite linear;
+    padding-right: 0em;
+}
+
+@keyframes spin {
+from {translate: 0;}
+to {translate: -100%;}
+}
+
+.mid-animasyon-foto {
+    flex: 0 0 4em;
+    height: 496px;
+    border-radius: .1em;
+    align-content: center;
+    opacity: .3;
+    pointer-events: none;
+    user-select: none;
+}
+
+/*Keşfet*/
+.kesfet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    user-select: none;
+}
+
+.kesfet-baslik {
+    text-align: center;
+    margin: 60px 0;
+    pointer-events: none;
+}
+
+.kesfet-baslik h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/*Keşfet Kartları*/
+.mit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.mit-kart {
+    background: var(--card-bg);
+    padding: 2px;
+    transition: 0.4s;
+    user-select: none;
+}
+
+.kart-kenar {
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 40px;
+    height: 100%;
+}
+
+.mit-kart:hover {
+    transform: translateY(-10px);
+}
+
+.mit-kart:hover .kart-kenar {
+    border-color: var(--gold);
+}
+
+.mit-sinif {
+    color: var(--gold);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mit-kart h3 {
+    font-family: 'Cinzel', serif;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.parsomen-buton {
+    display: inline-block;
+    margin-top: 25px;
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    border: 1px solid var(--gold);
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+
+.parsomen-buton:hover {
+    background: var(--gold);
+    color: #000;
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+}
+
+/*Footer*/
+footer {
+    padding: 80px 0 40px;
+    background: #050505;
+    border-top: 1px solid var(--gold);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-kolon h3, .footer-kolon h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-kolon h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.footer-kolon p {
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+.footer-kolon ul {
+    list-style: none;
+}
+
+.footer-kolon ul li {
+    margin-bottom: 5px;
+}
+
+.footer-kolon ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-kolon ul li a:hover {
+    color: var(--gold);
+    padding-left: 5px;
+}
+
+.iletisim li {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.iletisim span {
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+.footer-line {
+    width: 100px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 20px;
+}
+
+.footer-bot {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-bot p {
+    font-size: 0.8rem;
+    color: #444;
+    letter-spacing: 1px;
+}
