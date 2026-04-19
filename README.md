@@ -6,7 +6,7 @@ BeastLore, dünyanın farklı kültürlerine ait mitolojik varlıkları bir aray
 
 ## 📌 Proje Hakkında
 
-Bu proje, lise düzeyinde bir web tasarımı dersi kapsamında geliştirilmiştir. Amacımız; PHP, HTML ve CSS kullanarak dinamik, çok sayfalı ve gerçek bir kullanıcı deneyimi sunan bir web sitesi oluşturmaktı. Tasarım dili olarak parşömen, arşiv ve antik kütüphane estetiği benimsenmiştir.
+Bu projede amacımız; PHP, HTML ve CSS kullanarak dinamik, çok sayfalı ve gerçek bir kullanıcı deneyimi sunan bir web sitesi geliştirmek.
 
 ---
 
@@ -19,10 +19,6 @@ Bu proje, lise düzeyinde bir web tasarımı dersi kapsamında geliştirilmişti
 | `turk.php` | Türk mitolojisi varlıkları |
 | `japon.php` | Japon mitolojisi varlıkları |
 | `hakkinda.php` | Site hakkında bilgi ve form |
-| `includes/header.php` | Tüm sayfalarda ortak kullanılan üst şablon |
-| `includes/footer.php` | Tüm sayfalarda ortak kullanılan alt şablon |
-
----
 
 ---
 
@@ -63,7 +59,7 @@ beastlore/
 
 1. Projeyi bilgisayarınıza indirin
 2. XAMPP, WAMP veya benzeri bir yerel sunucu kurun
-3. Proje klasörünü `htdocs` (XAMPP) içine taşıyın
+3. Proje klasörünü `htdocs` (XAMPP), `www` (WAMP) içine taşıyın
 4. Tarayıcıdan `http://localhost/beastlore/` adresine gidin
 
 ---
