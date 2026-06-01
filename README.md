@@ -59,7 +59,7 @@ beastlore/
 └── medya/
     ├── logo.png
     └── icon.png
-
+```
 Kurulum
 
     Projeyi bilgisayarınıza indirin.
