@@ -74,6 +74,6 @@ Kurulum
 
 ## 👥 Ekip
 | İsim | Öğrenci No |
-|---|---|---|
+|---|---|
 | Mehmet Emin Dinçsoy | 33253304001 |
-| Ezgi Boztepe | 33253304003 | 
+| Ezgi Boztepe | 33253304003 |
