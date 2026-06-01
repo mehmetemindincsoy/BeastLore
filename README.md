@@ -73,6 +73,6 @@ Kurulum
     Tarayıcıdan http://localhost/beastlore/ adresine gidin.
 
 Geliştiriciler
-İsim	Öğrenci No
-Ezgi Boztepe	33253304003
-Mehmet Emin Dinçsoy	33253304001
+| İsim |	Öğrenci No |
+| Ezgi Boztepe | 33253304003 |
+| Mehmet Emin Dinçsoy | 33253304001 |
