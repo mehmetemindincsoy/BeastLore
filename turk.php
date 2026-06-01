@@ -26,6 +26,25 @@ $yaratiklar = [
     ],
 ];
 
+
+$dinamik_dosya = 'yaratiklar.json';
+if (file_exists($dinamik_dosya)) {
+    $dinamik_yaratiklar = json_decode(file_get_contents($dinamik_dosya), true);
+    if (is_array($dinamik_yaratiklar)) {
+        foreach ($dinamik_yaratiklar as $dy) {
+            if (isset($dy['ulke']) && $dy['ulke'] === 'turk') {
+                $yaratiklar[] = [
+                    'sinif' => $dy['sinif'],
+                    'isim'  => $dy['isim'],
+                    'ozet'  => $dy['ozet'],
+                    'link'  => $dy['link']
+                ];
+            }
+        }
+    }
+}
+
+
 include 'includes/header.php';
 ?>
 

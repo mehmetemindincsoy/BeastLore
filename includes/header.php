@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php
 if (!isset($css_dosyasi))  $css_dosyasi  = 'sayfa.css';
 if (!isset($aktif_menu))   $aktif_menu   = '';
@@ -33,6 +34,9 @@ if ($sayfa_basligi === 'BeastLore') {
                 <li><a href="turk.php"     <?php if ($aktif_menu === 'turk')     echo 'class="active"'; ?>>Türk Mitolojisi</a></li>
                 <li><a href="japon.php"    <?php if ($aktif_menu === 'japon')    echo 'class="active"'; ?>>Japon Mitolojisi</a></li>
                 <li><a href="hakkinda.php" <?php if ($aktif_menu === 'hakkinda') echo 'class="active"'; ?>>Hakkında</a></li>
+                <?php if (isset($_SESSION['oturum'])): ?>
+    <li><a href="yonetim.php?cikis=1" style="color: #c5a059; border: 1px solid #c5a059; padding: 5px 10px;">Oturumu Kapat</a></li>
+<?php endif; ?>
             </ul>
         </nav>
     </div>
